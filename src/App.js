@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
 // import logo from './logo.svg';
-import './App.css';
-import BaiTapLayout1 from './Components/BaiTapLayoutComponent/BaiTapLayout1';
-import DemoStateFul from './Components/DemoStateFul';
-import DemoStateless from './Components/DemoStateless';
-import Databinding from './Databinding/Databinding';
-import HandEvent from './HandleEvent/HandEvent';
+import "./App.css";
+import BaiTapChonMauXe from "./BaiTapChonMauXe";
+import BaiTapLayout1 from "./Components/BaiTapLayoutComponent/BaiTapLayout1";
+import DemoStateFul from "./Components/DemoStateFul";
+import DemoStateless from "./Components/DemoStateless";
+import Databinding from "./Databinding/Databinding";
+import DemoConditionalAndState from "./DemoLogin/DemoConditionalAndState";
+import HandEvent from "./HandleEvent/HandEvent";
+import DemoListAndKeys from "./ListAndKeys/DemoListAndKeys";
+import DemoProps from "./Pros/DemoProps";
+import BaiTapGioHang from "./BaiTapGioHang";
+import BTGioHang from "./Components/LamLaiLayoutComp";
+import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
+import BaiTapVongLap from "./BaiTapDanhSachPhim/BaiTapVongLap";
 
 function App() {
   return (
@@ -14,7 +22,15 @@ function App() {
       <DemoStateFul/> */}
       {/* <BaiTapLayout1/> */}
       {/* <Databinding /> */}
-      <HandEvent />
+      {/* <HandEvent /> */}
+      {/* <DemoConditionalAndState/> */}
+      {/* <BaiTapChonMauXe /> */}
+      {/* <DemoListAndKeys /> */}
+      {/* <DemoProps /> */}
+      {/* <BaiTapGioHang /> */}
+      {/* <BTGioHang /> */}
+      {/* <BaiTapVongLap /> */}
+      <BaiTapGioHangRedux />
     </div>
   );
 }

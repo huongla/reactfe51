@@ -3,7 +3,7 @@
 import React from 'react'
 
 export default function DemoStateless() {
-    //Bên trong lệnh rreturn của function component là nội dung giao diện của thẻ này.
+    //Bên trong lệnh return của function component là nội dung giao diện của thẻ này.
 
     return (
         // <div>
@@ -20,7 +20,7 @@ export default function DemoStateless() {
         //     </div>
         // </div>
 
-        //dùng <> </> để bao phủ, để ko vợ giao diện
+        //dùng <> </> để bao phủ, để ko vỡ giao diện
         // <>
         //     <div>
         //     React function component

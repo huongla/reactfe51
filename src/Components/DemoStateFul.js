@@ -1,7 +1,7 @@
 //cú pháp rcc => enter: react class component
 import React, { Component } from 'react'
 
-//stateful component hay còn gọi là react class component => là 1 lớp đối tượng kế thừa từ lớp đối tượng component của react => vì vậy sẽ có 1 số thuộc tính và phương thức có sa84nt ừ class Component
+//stateful component hay còn gọi là react class component => là 1 lớp đối tượng kế thừa từ lớp đối tượng component của react => vì vậy sẽ có 1 số thuộc tính và phương thức có sẵn từ class Component
 export default class DemoStateFul extends Component {
     render() {
         return (
