@@ -1,0 +1,21 @@
+[
+
+    { "id": 1, "price": 30, "name": "GUCCI G8850U", "url": "./img/v1.png", "desc": "Light pink square lenses define these sunglasses" },
+
+    { "id": 2, "price": 50, "name": "GUCCI G8759H", "url": "./img/v2.png", "desc": "Black square lenses define these sunglasses" },
+
+    { "id": 3, "price": 30, "name": "DIOR D6700HQ", "url": "./img/v3.png", "desc": "Blue lenses define these sunglasses" },
+
+    { "id": 4, "price": 30, "name": "DIOR D6005U", "url":  "./img/v4.png", "desc": "Gray square lenses define these sunglasses " },
+
+    { "id": 5, "price": 30, "name": "PRADA P8750", "url": "./img/v5.png", "desc": "Light gray square lenses define these sunglasses" },
+
+    { "id": 6, "price": 30, "name": "PRADA P9700", "url": "./img/v6.png", "desc": "Purple square lenses define these sunglasses" },
+
+    { "id": 7, "price": 30, "name": "FENDI F8750", "url": "./img/v7.png", "desc": "Light pink square lenses define these sunglasses" },
+
+    { "id": 8, "price": 30, "name": "FENDI F8500", "url": "./img/v8.png", "desc": "Brown square lenses define these sunglasses" },
+
+    { "id": 9, "price": 30, "name": "FENDI F4300", "url": "./img/v9.png", "desc": "Aqua square lenses define these sunglasses" }
+
+   ]

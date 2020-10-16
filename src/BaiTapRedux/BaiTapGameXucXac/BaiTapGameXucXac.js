@@ -1,3 +1,11 @@
+/**
+ * 1. xây dựng giao diện (chia component dàn layout)
+ * 2. xác định nguồi dữ liệu thay đổi của ứng dụng (state). Tổ chức lưu trữ
+ *  - biến: tài xỉu
+ *  - mảng xúc xắc: [{ma:'',hinhAnh},{ma:'',hinhAnh},{ma:'',hinhAnh}]
+ *  - tổng số bàn thắng: number
+ *  - tổng số bàn chơi: number
+ */
 import React, { Component } from "react";
 import DanhSachXucXac from "./DanhSachXucXac";
 import KetQuaTroChoi from "./KetQuaTroChoi";

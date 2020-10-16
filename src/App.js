@@ -15,6 +15,8 @@ import BTGioHang from "./Components/LamLaiLayoutComp";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 import BaiTapVongLap from "./BaiTapDanhSachPhim/BaiTapVongLap";
 import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
+import BaiTapStateProps from "./BaiTapStateProps/BaiTapStateProps";
+import BTGioHangRedux1 from "./BaiTapRedux/BTGioHangRedux1";
 
 function App() {
   return (
@@ -32,7 +34,9 @@ function App() {
       {/* <BTGioHang /> */}
       {/* <BaiTapVongLap /> */}
       {/* <BaiTapGioHangRedux /> */}
+      {/* <BTGioHangRedux1 /> */}
       <BaiTapGameXucXac />
+      {/* <BaiTapStateProps /> */}
     </div>
   );
 }
