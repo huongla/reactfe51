@@ -17,6 +17,10 @@ import BaiTapVongLap from "./BaiTapDanhSachPhim/BaiTapVongLap";
 import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 import BaiTapStateProps from "./BaiTapStateProps/BaiTapStateProps";
 import BTGioHangRedux1 from "./BaiTapRedux/BTGioHangRedux1";
+import BTGameXucXac1 from "./BTReduxLamLai/BTGameXucXac/BTGameXucXac1";
+import BTBugerRedux from "./BaiTapRedux/BTBuger/BTBurgerRedux";
+import LifeCycle from "./LifeCycle/LifeCycle";
+import DanhSachNguoiDung from "./FormComponent/DanhSachNguoiDung";
 
 function App() {
   return (
@@ -34,9 +38,12 @@ function App() {
       {/* <BTGioHang /> */}
       {/* <BaiTapVongLap /> */}
       {/* <BaiTapGioHangRedux /> */}
-      {/* <BTGioHangRedux1 /> */}
-      <BaiTapGameXucXac />
+      {/* <BaiTapGameXucXac /> */}
       {/* <BaiTapStateProps /> */}
+      {/* <BTGameXucXac1 /> */}
+      {/* <BTBugerRedux /> */}
+      {/* <LifeCycle /> */}
+      <DanhSachNguoiDung />
     </div>
   );
 }
