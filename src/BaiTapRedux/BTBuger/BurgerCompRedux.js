@@ -45,34 +45,13 @@ class BurgerCompRedux extends Component {
   };
   render() {
     return (
-      <div className="row m-5">
-        <div className="col-7">
-          <h3 className="mb-2 text-center">Cửa Hàng Buger</h3>
-          <div className="col text-center">
-            <div className={style1.breadTop}></div>
-            {this.renderBurgerInside()}
+      <div>
+        <h3 className="mb-2 text-center">Cửa Hàng Buger</h3>
+        <div className="col text-center">
+          <div className={style1.breadTop}></div>
+          {this.renderBurgerInside()}
 
-            <div className={style1.breadBottom}></div>
-          </div>
-        </div>
-        <div className="col-5">
-          <h3 className="text-center">Chọn thức ăn</h3>
-          <table className="table">
-            <thead>
-              <tr>
-                <td>Thức ăn</td>
-                <td></td>
-                <td>Giá</td>
-              </tr>
-            </thead>
-            <tbody>
-              {this.renderMenu()}
-              <tr>
-                <td className="colspan:2">Thành tiền</td>
-                <td>30 $</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className={style1.breadBottom}></div>
         </div>
       </div>
     );

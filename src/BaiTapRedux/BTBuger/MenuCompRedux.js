@@ -3,22 +3,41 @@ import { connect } from "react-redux";
 
 class MenuCompRedux extends Component {
   renderMenu = () => {
-    let { menu } = this.props;
-    return Object.entries(menu).map(([propMenu, price], index) => {
+    let { menu, burger } = this.props;
+    return Object.entries(menu).map(([propsMenu, price], index) => {
       return (
-        <tr>
-          <td>{propMenu}</td>
+        <tr key={index}>
+          <td>{propsMenu}</td>
           <td>
-            <button>+</button> <button>-</button>
+            <button
+              className="btn btn-success"
+              onClick={() => {
+                this.props.addInside(propsMenu, 1);
+              }}
+            >
+              +
+            </button>
+            {"  "}
+            {burger[propsMenu]}
+            {"  "}
+            <button
+              className="btn btn-danger"
+              onClick={() => {
+                this.props.addInside(propsMenu, -1);
+              }}
+            >
+              -
+            </button>
           </td>
           <td>{price}</td>
+          <td>{burger[propsMenu] * price}</td>
         </tr>
       );
     });
   };
   render() {
     return (
-      <div className="m-5">
+      <div>
         <h3 className="text-center">Chọn thức ăn</h3>
         <table className="table">
           <thead>
@@ -26,15 +45,17 @@ class MenuCompRedux extends Component {
               <td>Thức ăn</td>
               <td></td>
               <td>Giá</td>
+              <td>Thành tiền</td>
             </tr>
           </thead>
-          <tbody>
-            {this.renderMenu()}
+          <tbody>{this.renderMenu()}</tbody>
+          <tfoot>
             <tr>
-              <td className="colspan:2">Thành tiền</td>
-              <td>30 $</td>
+              <td colSpan="2"></td>
+              <td>Tổng cộng</td>
+              <td>{this.props.total}</td>
             </tr>
-          </tbody>
+          </tfoot>
         </table>
       </div>
     );
@@ -45,7 +66,21 @@ const mapStateToProp = (state) => {
   return {
     menu: state.StateBTBurger.menu,
     total: state.StateBTBurger.total,
+    burger: state.StateBTBurger.burger,
   };
 };
 
-export default connect(mapStateToProp, null)(MenuCompRedux);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addInside: (propsBurger, amount) => {
+      const action = {
+        type: "ADD_INSIDE",
+        propsBurger,
+        amount,
+      };
+      dispatch(action);
+    },
+  };
+};
+
+export default connect(mapStateToProp, mapDispatchToProps)(MenuCompRedux);

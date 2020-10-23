@@ -4,6 +4,7 @@ import BaiTapGioHangReducer from "./BaiTapGioHangReducer";
 import BaiTapGameXucXacReducer from "./BaiTapGameXucXacReducer";
 import BTGameXucXacReducer1 from "./BTGameXucXacReducer1";
 import BTBurgerReducer from "./BTBurgerReducer";
+import { QuanLyNguoiDungReducer } from "./QuanLyNguoiDungReducer";
 
 //state (store) tổng của ứng dụng
 export const rootReducer = combineReducers({
@@ -12,4 +13,5 @@ export const rootReducer = combineReducers({
   StateBaiTapGameXucXac: BaiTapGameXucXacReducer,
   StateBTGameXucXac: BTGameXucXacReducer1,
   StateBTBurger: BTBurgerReducer,
+  QuanLyNguoiDungReducer,
 });
